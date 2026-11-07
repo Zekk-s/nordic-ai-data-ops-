@@ -1,6 +1,6 @@
 import { motion } from 'motion/react';
 import { useTranslation } from 'react-i18next';
-import { ChevronRight, ShieldCheck } from 'lucide-react';
+import { ArrowUpRight, ChevronRight } from 'lucide-react';
 
 export default function Hero() {
   const { t } = useTranslation();
@@ -26,27 +26,30 @@ export default function Hero() {
         </p>
         
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-          <motion.button
+          <motion.a
+            href="mailto:zeki@multilingual.no"
             whileHover={{ scale: 1.02 }}
             whileTap={{ scale: 0.98 }}
             className="magnetic-button px-8 py-4 bg-aurora-cyan text-nordic-navy font-semibold rounded-full flex items-center gap-2 group"
           >
             {t('hero.ctaPrimary')}
             <ChevronRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
-          </motion.button>
+          </motion.a>
           
-          <motion.button
+          <motion.a
+            href="https://multilingual.no"
+            target="_blank"
+            rel="noopener noreferrer"
             whileHover={{ scale: 1.02, backgroundColor: "rgba(255,255,255,0.1)" }}
             whileTap={{ scale: 0.98 }}
             className="magnetic-button px-8 py-4 border border-white/20 text-ice-white font-semibold rounded-full flex items-center gap-2"
           >
-            <ShieldCheck className="w-4 h-4" />
             {t('hero.ctaSecondary')}
-          </motion.button>
+            <ArrowUpRight className="w-4 h-4" />
+          </motion.a>
         </div>
       </motion.div>
       
-      {/* Decorative elements */}
       <div className="absolute bottom-10 left-1/2 -translate-x-1/2 opacity-20">
         <motion.div
           animate={{ y: [0, 10, 0] }}

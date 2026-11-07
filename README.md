@@ -4,7 +4,7 @@ Single-page site for a service offer around multilingual AI quality, localisatio
 
 `src/App.tsx` is the page: hero, trust bar, three service cards, a wording slider (English in, Norwegian out), a static dashboard, and a credentials block. A language toggle sits in the corner. A Three.js particle field sits behind the page.
 
-The hero buttons, footer links, and dashboard download buttons have no destinations. The numbers, certifications, and case studies are strings in the components.
+The email button and the footer address use mailto:zeki@multilingual.no. The site link is https://multilingual.no. The wording slider and the dashboard are labeled demos. They do not read live data.
 
 ## Stack
 
