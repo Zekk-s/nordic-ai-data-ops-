@@ -37,8 +37,8 @@ export default function App() {
             © 2026 Nordic AI Data Ops. All Rights Reserved.
           </span>
           <div className="flex gap-8">
-            <a href="#" className="clinical-text hover:text-aurora-cyan transition-colors">Privacy Policy</a>
-            <a href="#" className="clinical-text hover:text-aurora-cyan transition-colors">Terms of Service</a>
+            <a href="mailto:zeki@multilingual.no" className="clinical-text hover:text-aurora-cyan transition-colors">zeki@multilingual.no</a>
+            <a href="https://multilingual.no" target="_blank" rel="noopener noreferrer" className="clinical-text hover:text-aurora-cyan transition-colors">multilingual.no</a>
           </div>
         </div>
       </footer>
